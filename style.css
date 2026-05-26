@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    background: #F9F7FB; /* fundo roxo muito claro e elegante */
+    font-family: Arial, sans-serif;
+    color: #2D2D2D; /* texto em cinza escuro para melhor contraste */
+}
+p{
+    font-size: 16px;
+}
+.container{
+    display: grid;
+    grid-template-rows: auto auto auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* Cabeçalho com vídeo de fundo */
+header {
+    position: relative; /* ancora o vídeo absoluto dentro do header */
+    height: 65vh; /* reduzido de 100vh para 50vh (metade da tela) para deixar o header menor */
+    overflow: hidden; /* esconde o vídeo que vazar pra fora dos limites */
+}
+
+/* Vídeo de fundo do header */
+header video {
+    position: absolute; /* posiciona em relação ao header (pai) */
+    top: 0; /* gruda no topo */
+    left: 0; /* gruda na esquerda */
+    width: 100%; /* ocupa toda a largura */
+    height: 100%; /* ocupa toda a altura do header */
+    object-fit: cover; /* preenche sem distorcer, corta o que sobra */
+    object-position: top center; /* corta a parte de baixo, mantendo o topo visível */
+    z-index: 0; /* fica atrás do conteúdo */
+}
+.fundo-escuro::before{
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(58, 34, 93, 0.5);
+    content: "";
+    position: absolute;
+    z-index: 1;
+}
+.conteudo-header {
+    position: relative; /* necessário para o z-index funcionar
+*/
+    z-index: 2; /* fica na frente do vídeo */
+    height: 100%; /* ocupa toda a altura do banner */
+    display: flex; /* ativa layout flexível */
+    flex-direction: column; /* empilha os itens verticalmente */
+    justify-content: center; /* centraliza verticalmente */
+    align-items: center; /* centraliza horizontalmente */
+    text-align: center;
+    padding: 20px;
+    color: #F0F0F0;
+}
+nav{
+    background: rgb(58, 34, 93); /* roxo escuro principal - mantém conforme solicitado */
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border-bottom: 3px solid #C4915F; /* borda em ouro para sofisticação */
+}
+nav a{
+    justify-content: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F0F0F0; /* texto branco para contraste com roxo */
+    transition: all 0.3s ease; /* transição suave */
+}
+.inativo:hover{
+    color: #C4915F; /* muda para ouro ao passar o mouse */
+    border-bottom: 2px solid #C4915F;
+    padding-bottom: 2px;
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+.ativo{
+    border-bottom: 3px solid #C4915F; /* borda em ouro para página ativa */
+    padding-bottom: 2px;
+    color: #C4915F; /* texto em ouro para página ativa */
+    transition: all 0.3s ease; 
+}
+.ativo:hover{
+    color: #F0A050; /* ouro mais claro ao passar mouse */
+    border-bottom: 3px solid #F0A050; 
+}
+main{
+    padding: 20px;
+    margin: 0 15%;
+    box-shadow: 0 0 15px rgba(58, 34, 93, 0.15); /* sombra em roxo suave */
+    text-align: justify;
+    background: #FFFFFF; /* fundo branco puro para contraste e legibilidade */
+    border-radius: 10px;
+    border-left: 4px solid #C4915F; /* borda esquerda em ouro para destaque */
+}
+footer{
+    text-align: center;
+    background: #3A225D; /* roxo escuro mantém */
+    color: #F0F0F0; /* texto branco suave */
+    padding-top: 5px;
+    margin-top: 2px;
+    border-top: 3px solid #C4915F; /* borda em ouro no topo */
+}
+.FSF{
+    font-size: 12px;
+}
