@@ -1,9 +1,9 @@
 /* Estilo global do documento */
 body{
     margin: 0; /* remove margens padrão do navegador */
-    background: #F9F7FB; /* fundo roxo muito claro e elegante */
+    background: #FAFAFA; /* fundo roxo muito claro e elegante */
     font-family: Arial, sans-serif; /* fonte limpa e legível */
-    color: #2D2D2D; /* texto em cinza escuro para melhor contraste */
+    color: #78609C; /* texto em cinza escuro para melhor contraste */
 }
 
 /* Parágrafos normais do conteúdo principal */
@@ -60,7 +60,7 @@ header video {
     align-items: center; /* centraliza horizontalmente */
     text-align: center; /* centraliza o texto */
     padding: 20px; /* adiciona espaçamento interno */
-    color: #F0F0F0; /* texto branco suave para contraste */
+    color: #FAFAFA; /* texto branco suave para contraste */
 }
 
 /* Logo da navegação */
@@ -71,11 +71,11 @@ header video {
 
 /* Barra de navegação principal */
 nav{
-    background: rgb(58, 34, 93); /* roxo escuro principal */
+    background: #3a225d; /* roxo escuro principal */
     padding: 8px; /* espaço interno em torno dos itens */
     display: flex; /* layout flex para alinhar links e logo */
     justify-content: space-between; /* separa logo e links nas extremidades */
-    border-bottom: 3px solid #C4915F; /* adiciona uma borda dourada abaixo do nav */
+    border-bottom: 3px solid #B1AF7C; /* adiciona uma borda dourada abaixo do nav */
     align-items: center; /* alinha verticalmente os itens do nav */
 }
 
@@ -92,14 +92,14 @@ nav a{
     justify-content: center; /* mantém o texto do link centralizado */
     font-weight: bold; /* deixa o texto em negrito */
     text-decoration: none; /* remove sublinhado padrão */
-    color: #F0F0F0; /* texto branco para contraste */
+    color: #FAFAFA; /* texto branco para contraste */
     transition: all 0.3s ease; /* transição suave em hover */
 }
 
 /* Estado hover para links inativos */
 .inativo:hover{
-    color: #C4915F; /* muda a cor do texto para dourado */
-    border-bottom: 2px solid #C4915F; /* adiciona linha dourada abaixo */
+    color: #B1AF7C; /* muda a cor do texto para dourado */
+    border-bottom: 2px solid #B1AF7C; /* adiciona linha dourada abaixo */
     padding-bottom: 2px; /* mantém o espaçamento interno ao adicionar borda */
     transition: all 0.3s ease; /* suaviza a mudança de estilo */
     transform: scale(1.1); /* aumenta levemente o link ao passar o mouse */
@@ -107,16 +107,16 @@ nav a{
 
 /* Estilo do link ativo */
 .ativo{
-    border-bottom: 3px solid #C4915F; /* destaque dourado para o item ativo */
+    border-bottom: 3px solid #B1AF7C; /* destaque dourado para o item ativo */
     padding-bottom: 2px; /* mantém espaçamento mesmo com a borda */
-    color: #C4915F; /* texto dourado para indicar ativo */
+    color: #B1AF7C; /* texto dourado para indicar ativo */
     transition: all 0.3s ease; /* transição suave para alterações futuras */
 }
 
 /* Hover para o link ativo */
 .ativo:hover{
-    color: #F0A050; /* cor dourada mais clara ao passar o mouse */
-    border-bottom: 3px solid #F0A050; /* borda dourada mais clara */
+    color: #5C5A22; /* cor dourada mais clara ao passar o mouse */
+    border-bottom: 3px solid #5C5A22; /* borda dourada mais clara */
 }
 
 /* Conteúdo principal da página */
@@ -125,9 +125,9 @@ main{
     margin: 0 15%; /* margens laterais para separar do corpo */
     box-shadow: 0 0 15px rgba(58, 34, 93, 0.15); /* sombra suave para profundidade */
     text-align: justify; /* justifica o texto para aparência mais formal */
-    background: #FFFFFF; /* fundo branco para contraste com o corpo */
+    background: #CABFDB; /* fundo branco para contraste com o corpo */
     border-radius: 10px; /* cantos arredondados no bloco principal */
-    border-left: 4px solid #C4915F; /* borda dourada à esquerda para destaque */
+    border-left: 4px solid #B1AF7C; /* borda dourada à esquerda para destaque */
 }
 img{
     width: 450px;
@@ -143,7 +143,7 @@ footer{
     color: #F0F0F0; /* texto claro para legibilidade */
     padding-top: 5px; /* pequeno espaçamento superior */
     margin-top: 2px; /* separação do conteúdo acima */
-    border-top: 3px solid #C4915F; /* borda dourada superior para acabamento */
+    border-top: 3px solid #B1AF7C; /* borda dourada superior para acabamento */
 }
 h1{
     font-size: 40px;
