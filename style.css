@@ -124,7 +124,7 @@ main{
     padding: 20px; /* espaço interno confortável */
     margin: 0 15%; /* margens laterais para separar do corpo */
     box-shadow: 0 0 15px rgba(58, 34, 93, 0.15); /* sombra suave para profundidade */
-    text-align: justify; /* justifica o texto para aparência mais formal */
+    text-align: left; /* justifica o texto para aparência mais formal */
     background: #CABFDB; /* fundo branco para contraste com o corpo */
     border-radius: 10px; /* cantos arredondados no bloco principal */
     border-left: 4px solid #B1AF7C; /* borda dourada à esquerda para destaque */
